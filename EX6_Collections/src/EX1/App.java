@@ -7,6 +7,7 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String resp;
+
         do {
             System.err.print("");
             System.err.print("\nDigite sua conta de adicao ou subtracao: ");
