@@ -16,5 +16,12 @@ public class main {
         System.out.println(persistence.findBy("Nathan"));
         System.out.println(persistence.findBy("julia"));
         System.out.println(persistence.findBy("2008"));
+        System.out.println("==================Excluindo==================");
+        persistence.remove("2008");
+        System.out.println(persistence.findAll());
+        System.out.println("==================Alterando==================");
+        persistence.replace("2004", "Julia;julia@gmail.com;20/10/2003;");
+        System.out.println(persistence.findAll());
+
     }
 }

@@ -9,6 +9,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
 
 public class IOFilePersistence implements FilePersistence {
 
@@ -63,12 +66,31 @@ public class IOFilePersistence implements FilePersistence {
 
     @Override
     public boolean remove(String sentence) {
-        return false;
+        var contentList = getContentList();
+
+        if (contentList.stream().noneMatch(c -> c.contains(sentence)))
+            return false;
+
+        clearFile();
+        contentList.stream()
+                .filter(c -> !c.contains(sentence))
+                .forEach(this::write);
+
+        return true;
     }
 
     @Override
     public String replace(String oldContent, String newContent) {
-        return null;
+        var contentList = getContentList();
+
+        if (contentList.stream().noneMatch(c -> c.contains(oldContent)))
+            return "";
+
+        clearFile();
+        contentList.stream()
+                .map(c -> c.contains(oldContent) ? newContent : c)
+                .forEach(this::write);
+        return newContent;
     }
 
     @Override
@@ -81,20 +103,20 @@ public class IOFilePersistence implements FilePersistence {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        return null;
+        return data;
     }
 
     private void clearFile() {
         try (OutputStream outputStream = new FileOutputStream(currentDir + storedDir + fileName)) {
-            System.out.printf("inicializando recursos {%s}\n", currentDir + storedDir + fileName);
         } catch (IOException ex) {
             ex.printStackTrace();
         }
 
     }
 
-    private void createFile() {
-
+    private List<String> getContentList() {
+        var content = findAll();
+        return new ArrayList<>(Stream.of(content.split(System.lineSeparator())).toList());
     }
 
 }
