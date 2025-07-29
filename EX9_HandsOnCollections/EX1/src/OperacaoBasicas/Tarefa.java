@@ -1,3 +1,5 @@
+package OperacaoBasicas;
+
 public class Tarefa {
     private final String descricao;
 
