@@ -1,4 +1,3 @@
-import java.io.IOException;
 
 import br.com.dio.persistence.FilePersistence;
 import br.com.dio.persistence.IOFilePersistence;
