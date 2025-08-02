@@ -35,6 +35,27 @@ public class EmployeeDAO {
         }
     }
 
+//    public void insertWithProcedure(final EmployeeEntity entity) {
+//        try (
+//                var connection = ConnectionUtil.getConnection();
+//                var statement = connection.createStatement()
+//        ) {
+//            var sql = "INSERT INTO employees (name, salary, birthday) values ('" +
+//                    entity.getName() + "', " +
+//                    entity.getSalary().toString() + ", " +
+//                    "'" + formatOffSetDateTime(entity.getBirthday()) + "' )";
+//            statement.executeUpdate(sql);
+//            System.out.printf("foram afetados %s registro na base de dados", statement.getUpdateCount());
+//
+//            if (statement instanceof StatementImpl impl) {
+//                entity.setId(impl.getLastInsertID());
+//            }
+//
+//        } catch (Exception ex) {
+//            ex.printStackTrace();
+//        }
+//    }
+
     public void update(final EmployeeEntity entity) {
         try (
                 var connection = ConnectionUtil.getConnection();
