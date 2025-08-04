@@ -1,60 +1,37 @@
-Aug 04, 2025 10:53:08 AM liquibase.changelog
+Aug 04, 2025 5:08:00 PM liquibase.changelog
 INFO: Reading resource: db/changelog/migrations/db.changelog-001.sql
-Aug 04, 2025 10:53:08 AM liquibase.changelog
+Aug 04, 2025 5:08:00 PM liquibase.changelog
 INFO: Reading from board.databasechangelog
-Aug 04, 2025 10:53:08 AM liquibase.changelog
+Aug 04, 2025 5:08:00 PM liquibase.changelog
 INFO: Reading resource: db/changelog/migrations/db.changelog-002.sql
-Aug 04, 2025 10:53:08 AM liquibase.changelog
+Aug 04, 2025 5:08:00 PM liquibase.changelog
 INFO: Reading resource: db/changelog/migrations/db.changelog-003.sql
-Aug 04, 2025 10:53:08 AM liquibase.changelog
+Aug 04, 2025 5:08:00 PM liquibase.changelog
 INFO: Reading resource: db/changelog/migrations/db.changelog-004.sql
-Aug 04, 2025 10:53:08 AM liquibase.lockservice
-INFO: Successfully acquired change log lock
-Aug 04, 2025 10:53:08 AM liquibase.command
-INFO: Using deploymentId: 4315588125
-Aug 04, 2025 10:53:08 AM liquibase.changelog
+Database is up to date, no changesets to execute
+Aug 04, 2025 5:08:01 PM liquibase.changelog
 INFO: Reading from board.databasechangelog
-Running Changeset: db/changelog/migrations/db.changelog-002.sql::20250408::nathan
-Aug 04, 2025 10:53:09 AM liquibase.changelog
-INFO: Custom SQL executed
-Aug 04, 2025 10:53:09 AM liquibase.changelog
-INFO: ChangeSet db/changelog/migrations/db.changelog-002.sql::20250408::nathan ran successfully in 163ms
-Running Changeset: db/changelog/migrations/db.changelog-003.sql::20250408::nathan
-Aug 04, 2025 10:53:09 AM liquibase.changelog
-INFO: Custom SQL executed
-Aug 04, 2025 10:53:09 AM liquibase.changelog
-INFO: ChangeSet db/changelog/migrations/db.changelog-003.sql::20250408::nathan ran successfully in 50ms
-Running Changeset: db/changelog/migrations/db.changelog-004.sql::20250408::nathan
-Aug 04, 2025 10:53:09 AM liquibase.changelog
-INFO: Custom SQL executed
-Aug 04, 2025 10:53:09 AM liquibase.changelog
-INFO: ChangeSet db/changelog/migrations/db.changelog-004.sql::20250408::nathan ran successfully in 71ms
 
 UPDATE SUMMARY
-Run:                          3
-Previously run:               1
+Run:                          0
+Previously run:               4
 Filtered out:                 0
 -------------------------------
 Total change sets:            4
 
-Aug 04, 2025 10:53:09 AM liquibase.util
+Aug 04, 2025 5:08:01 PM liquibase.util
 INFO: UPDATE SUMMARY
-Aug 04, 2025 10:53:09 AM liquibase.util
-INFO: Run:                          3
-Aug 04, 2025 10:53:09 AM liquibase.util
-INFO: Previously run:               1
-Aug 04, 2025 10:53:09 AM liquibase.util
+Aug 04, 2025 5:08:01 PM liquibase.util
+INFO: Run:                          0
+Aug 04, 2025 5:08:01 PM liquibase.util
+INFO: Previously run:               4
+Aug 04, 2025 5:08:01 PM liquibase.util
 INFO: Filtered out:                 0
-Aug 04, 2025 10:53:09 AM liquibase.util
+Aug 04, 2025 5:08:01 PM liquibase.util
 INFO: -------------------------------
-Aug 04, 2025 10:53:09 AM liquibase.util
+Aug 04, 2025 5:08:01 PM liquibase.util
 INFO: Total change sets:            4
-Aug 04, 2025 10:53:09 AM liquibase.util
+Aug 04, 2025 5:08:01 PM liquibase.util
 INFO: Update summary generated
-Aug 04, 2025 10:53:09 AM liquibase.command
-INFO: Update command completed successfully.
-Liquibase: Update has been successful. Rows affected: 3
-Aug 04, 2025 10:53:09 AM liquibase.lockservice
-INFO: Successfully released change log lock
-Aug 04, 2025 10:53:09 AM liquibase.command
+Aug 04, 2025 5:08:01 PM liquibase.command
 INFO: Command execution complete
