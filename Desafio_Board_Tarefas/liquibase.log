@@ -1,0 +1,48 @@
+Aug 04, 2025 10:22:41 AM liquibase.changelog
+INFO: Reading resource: db/changelog/migrations/db.changelog-001.sql
+Aug 04, 2025 10:22:41 AM liquibase.changelog
+INFO: Creating database history table with name: board.databasechangelog
+Aug 04, 2025 10:22:41 AM liquibase.changelog
+INFO: Reading from board.databasechangelog
+Aug 04, 2025 10:22:42 AM liquibase.snapshot
+INFO: Creating snapshot
+Aug 04, 2025 10:22:42 AM liquibase.lockservice
+INFO: Successfully acquired change log lock
+Aug 04, 2025 10:22:42 AM liquibase.command
+INFO: Using deploymentId: 4313760708
+Aug 04, 2025 10:22:42 AM liquibase.changelog
+INFO: Reading from board.databasechangelog
+Running Changeset: db/changelog/migrations/db.changelog-001.sql::20250408::nathan
+Aug 04, 2025 10:22:42 AM liquibase.changelog
+INFO: Custom SQL executed
+Aug 04, 2025 10:22:42 AM liquibase.changelog
+INFO: ChangeSet db/changelog/migrations/db.changelog-001.sql::20250408::nathan ran successfully in 123ms
+
+UPDATE SUMMARY
+Run:                          1
+Previously run:               0
+Filtered out:                 0
+-------------------------------
+Total change sets:            1
+
+Aug 04, 2025 10:22:42 AM liquibase.util
+INFO: UPDATE SUMMARY
+Aug 04, 2025 10:22:42 AM liquibase.util
+INFO: Run:                          1
+Aug 04, 2025 10:22:42 AM liquibase.util
+INFO: Previously run:               0
+Aug 04, 2025 10:22:42 AM liquibase.util
+INFO: Filtered out:                 0
+Aug 04, 2025 10:22:42 AM liquibase.util
+INFO: -------------------------------
+Aug 04, 2025 10:22:42 AM liquibase.util
+INFO: Total change sets:            1
+Aug 04, 2025 10:22:42 AM liquibase.util
+INFO: Update summary generated
+Aug 04, 2025 10:22:42 AM liquibase.command
+INFO: Update command completed successfully.
+Liquibase: Update has been successful. Rows affected: 1
+Aug 04, 2025 10:22:42 AM liquibase.lockservice
+INFO: Successfully released change log lock
+Aug 04, 2025 10:22:42 AM liquibase.command
+INFO: Command execution complete
