@@ -17,7 +17,7 @@ public class BoardService {
         var boardColumnDAO = new BoardColumnDAO(connection);
         try {
             dao.insert(entity);
-            var columns = entity.getBoardColumn().stream().map(c -> {
+            var columns = entity.getBoardColumns().stream().map(c -> {
                 c.setBoard(entity);
                 return c;
             }).toList();

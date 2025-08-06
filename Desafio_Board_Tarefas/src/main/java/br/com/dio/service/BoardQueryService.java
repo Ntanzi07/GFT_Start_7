@@ -20,7 +20,7 @@ public class BoardQueryService {
         var optional = dao.findById(id);
         if (optional.isPresent()) {
             var entity = optional.get();
-            entity.setBoardColumn(boardColumnDAO.findByBoardId(entity.getId()));
+            entity.setBoardColumns(boardColumnDAO.findByBoardId(entity.getId()));
             return Optional.of(entity);
         }
         return Optional.empty();

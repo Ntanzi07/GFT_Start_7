@@ -69,7 +69,7 @@ public class MainMenu {
         var cancelColumn = createColumn(cancelColumnName, CANCEL, additionalColumns + 2);
         columns.add(cancelColumn);
 
-        entity.setBoardColumn(columns);
+        entity.setBoardColumns(columns);
         try (var conection = getConnection()) {
             var service = new BoardService(conection);
             service.insert(entity);
