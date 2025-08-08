@@ -1,37 +1,39 @@
-Aug 06, 2025 6:17:43 PM liquibase.changelog
+Aug 07, 2025 7:41:20 PM liquibase.changelog
 INFO: Reading resource: db/changelog/migrations/db.changelog-001.sql
-Aug 06, 2025 6:17:43 PM liquibase.changelog
+Aug 07, 2025 7:41:21 PM liquibase.changelog
 INFO: Reading from board.databasechangelog
-Aug 06, 2025 6:17:43 PM liquibase.changelog
+Aug 07, 2025 7:41:21 PM liquibase.changelog
 INFO: Reading resource: db/changelog/migrations/db.changelog-002.sql
-Aug 06, 2025 6:17:43 PM liquibase.changelog
+Aug 07, 2025 7:41:21 PM liquibase.changelog
 INFO: Reading resource: db/changelog/migrations/db.changelog-003.sql
-Aug 06, 2025 6:17:43 PM liquibase.changelog
+Aug 07, 2025 7:41:21 PM liquibase.changelog
 INFO: Reading resource: db/changelog/migrations/db.changelog-004.sql
+Aug 07, 2025 7:41:21 PM liquibase.changelog
+INFO: Reading resource: db/changelog/migrations/db.changelog-005.sql
 Database is up to date, no changesets to execute
-Aug 06, 2025 6:17:44 PM liquibase.changelog
+Aug 07, 2025 7:41:21 PM liquibase.changelog
 INFO: Reading from board.databasechangelog
 
 UPDATE SUMMARY
 Run:                          0
-Previously run:               4
+Previously run:               5
 Filtered out:                 0
 -------------------------------
-Total change sets:            4
+Total change sets:            5
 
-Aug 06, 2025 6:17:44 PM liquibase.util
+Aug 07, 2025 7:41:21 PM liquibase.util
 INFO: UPDATE SUMMARY
-Aug 06, 2025 6:17:44 PM liquibase.util
+Aug 07, 2025 7:41:21 PM liquibase.util
 INFO: Run:                          0
-Aug 06, 2025 6:17:44 PM liquibase.util
-INFO: Previously run:               4
-Aug 06, 2025 6:17:44 PM liquibase.util
+Aug 07, 2025 7:41:21 PM liquibase.util
+INFO: Previously run:               5
+Aug 07, 2025 7:41:21 PM liquibase.util
 INFO: Filtered out:                 0
-Aug 06, 2025 6:17:44 PM liquibase.util
+Aug 07, 2025 7:41:21 PM liquibase.util
 INFO: -------------------------------
-Aug 06, 2025 6:17:44 PM liquibase.util
-INFO: Total change sets:            4
-Aug 06, 2025 6:17:44 PM liquibase.util
+Aug 07, 2025 7:41:21 PM liquibase.util
+INFO: Total change sets:            5
+Aug 07, 2025 7:41:21 PM liquibase.util
 INFO: Update summary generated
-Aug 06, 2025 6:17:44 PM liquibase.command
+Aug 07, 2025 7:41:21 PM liquibase.command
 INFO: Command execution complete
